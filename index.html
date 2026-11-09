@@ -1,26 +1,113 @@
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la página</title>
+    <title>ZARA - Página Oficial</title>
     <style>
         body {
-            background-color: pink;
-            color: white;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        a {
-            color: white;
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 6px;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 2px;
+        }
+        .btn-video {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-video:hover {
+            background-color: #333333;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 9px;
+            color: #999999;
+            letter-spacing: 2px;
+            border-top: 1px solid #eeeeee;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Este es el contenido visible de la página.</p>
-    <h2>María del Rocío Pérez García.</h2>
-    <p><a href="https://youtu.be/HOegM6iv1bo?si=0OAzsukMbA8n8uun" target="_blank">Ver video</a></p>
+    <header>
+        <div class="logo">ZARA</div>
+        <nav>
+            <a href="#">SHOP</a>
+            <a href="#">INFO</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>¡Hola, mundo!</h1>
+        <p>Este es el contenido visible de la página.</p>
+        <h2>María del Rocío Pérez García</h2>
+        <a class="btn-video" href="https://youtu.be/HOegM6iv1bo?si=0OAzsukMbA8n8uun" target="_blank">Ver video</a>
+    </main>
+
+    <footer>
+        &copy; 2026 ZARA
+    </footer>
 </body>
 </html>
 
-
+```
